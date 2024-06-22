@@ -1,0 +1,236 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+/* Variables */
+:root {
+  --brand-green: #00856f;
+  --brand-green-light: #dce9e2;
+  --white: #ffffff;
+  --gray-headline: #061800;
+  --gray-paragraph: #384633;
+  --brand-green-hover: #00453a;
+  --brand-beige: #fffaf1;
+  --brand-green-light-2: #f7f9f9;
+}
+
+/* Core styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.primary__button {
+  padding: 16px 32px;
+  border-radius: 40px;
+  background-color: var(--brand-green);
+  border: 1px solid var(--brand-green);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.primary__button:hover {
+  background-color: var(--brand-green-hover);
+  border-color: var(--brand-green-hover);
+}
+
+.secondary__button {
+  padding: 10px 24px;
+  border: 1px solid var(--brand-green);
+  color: var(--brand-green);
+  border-radius: 40px;
+  font-size: 14px;
+  line-height: 18.23px;
+  text-transform: uppercase;
+  background-color: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.secondary__button:hover {
+  background-color: var(--brand-green);
+  color: var(--white);
+}
+
+/* Header styles */
+.header {
+  padding: 16px 0;
+  background-color: var(--brand-green-light);
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navigation-list {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header__navigation-item.active {
+  font-weight: 600;
+}
+
+.header__navigation-link {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 21px;
+  color: var(--brand-green);
+  opacity: 80%;
+}
+
+/* Hero styles */
+.hero {
+  background-color: var(--brand-green-light);
+}
+
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero__subtitle {
+  color: var(--brand-green);
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 700;
+  letter-spacing: 8%;
+}
+
+.hero__title {
+  font-size: 52px;
+  line-height: 67px;
+  font-weight: 700;
+  color: var(--gray-headline);
+}
+
+.hero__description {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: var(--gray-paragraph);
+}
+
+.hero__button {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Statistics styles */
+.stats {
+  background-color: var(--brand-green-light-2);
+}
+.stats__wrapper {
+  background-color: var(--brand-beige);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  border-radius: 6px;
+  transform: translateY(-50%);
+}
+
+.stats__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.stats__title {
+  font-size: 48px;
+  line-height: 62px;
+  font-weight: 700;
+  color: var(--gray-headline);
+}
+.stats__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--brand-green);
+}
+
+.stats__seperotor {
+  width: 1px;
+  height: 84px;
+  background-color: var(--brand-green);
+  border: none;
+}
+/* services style */
+.services {
+  background-color: var(--brand-green-light-2);
+}
+.services_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.services_subtitle {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 8%;
+}
+.services__title {
+  font-size: 40px;
+  width: 56%;
+  line-height: 52px;
+  color: var(--gray-headline);
+}
+.services__cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+.services__card {
+  background-color: var(--white);
+  border: 1px solid var(--brand-green-light);
+  border-radius: 6px;
+  padding: 24px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.services__card-title {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--gray-headline);
+  margin: 10px 0;
+}
+.services__card-description {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--gray-paragraph);
+}
